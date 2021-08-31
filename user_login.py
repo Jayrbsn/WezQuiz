@@ -24,7 +24,7 @@ db = MySQL(app)
 def user_login():
     if request.method == 'POST':    # If user clicks on the button...
         return redirect(url_for("index"))   # ... they will be redirected to the "index" method aka log in page
-    return render_template("index.html")  # HTML display where button is located
+    return render_template("welcome.html")  # HTML display where button is located
 
 
 # Repeat the above process for the login page
